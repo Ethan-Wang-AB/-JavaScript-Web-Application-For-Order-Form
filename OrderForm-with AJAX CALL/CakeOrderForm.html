@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="calCost.js"></script> 
+     <script type='text/javascript' src='StandardJSFunctions.js'></script>
+   
+    <link href="orders.css" rel="stylesheet" type="text/css">
+
+    <title>New City Bakery</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="photos/logo.png" alt="logo" id="logo">New City Bakeries<img src="photos/logo.png" alt="logo" id="logo"></h1>
+        <span id="dtfield" onchange="initFunction()"></span>
+
+        <p id="contactInfo">Contact: 4039994444 Email: NCBES@NCBES.com</p>
+    </header>
+
+    <div id= "orderform">
+        <h3>Order information</h3>
+        <form   onsubmit="showInvoice();  return false;">
+            <!-- according to the statement of the assignment, set name field only accept letters, hyphen and space -->
+            <div>
+                <label id="info" for="Name">First Name</label>
+                <input type="text" placeholder="Su Wang" id="firstName" maxlength="15" name="firstnames" autofocus
+                    pattern="[a-zA-Z-\s]{1,15}[a-zA-Z-\s]{1,15}" class="rightalign" required onchange="selection()">
+            </div>
+            <div>
+                <div>
+                    <label for="Name">Last Name</label>
+                    <input type="text" placeholder="Su Wang" id="lastName" maxlength="15" name="lastnames"
+                        pattern="[a-zA-Z-\s]{1,15}[a-zA-Z-\s]{1,15}" class="rightalign" required onchange="selection()">
+                </div>
+                <div>
+                    <label for="phone">Telephone</label>
+                    <input type="tel" placeholder="0-000-000-0000" id="phone" name="numbers" required
+                        pattern="[0-9]{0,1}[-]{0,1}[\(]{0,1}[0-9]{3}[\)]{0,1}[ -]{0,1}[\(]{0,1}[0-9]{3}[\)]{0,1}[ -]{0,1}[\(]{0,1}[0-9]{4}[\)]{0,1}"
+                        class="rightalign" onchange="selection()"></br>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="dw@live.net" id="email" name="email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                    class="rightalign" onchange="selection()"></br>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="620 2ave NW Calgary" id="address" name="address" required
+                        class="rightalign"  onchange="selection()"></br>
+                </div>
+                <div>
+                    <label for="postcode"><span>Postal Code</span></label>
+                    <input type="text" id="postcode" placeholder="T1A 0B4" name="postcode" required class="rightalign"
+                        pattern="[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[\s]{0,1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}" onchange="selection()"
+                        >
+                </div></br>
+            </div>
+            <div id="caketype" >
+               
+            </div>
+            <div id="sheetcake" >
+               
+            </div>
+            <div id="roundcake" >
+               
+            </div>
+            <div id="toppings" >
+               
+            </div>
+            <div class="bottom">
+                <input type="button" value="Submit" onclick="calctotal();" >
+
+                <input type="reset" value="reset" >
+            </div>
+        </div>
+                    
+        </form>
+    </div>
+    <div id="invoice">
+
+    </div>
+    <footer>
+        <span id="footers">Address: 15718 bVeronica Palace NW Calgary</span></br>
+        <span id="footers">E-mail : service@bakeries.com</span></br>
+        <span id="footers">Phone : 14032589999</span>
+    
+      </footer>
+</body>
+
+</html>

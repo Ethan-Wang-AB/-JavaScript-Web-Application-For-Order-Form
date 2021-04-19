@@ -1,0 +1,131 @@
+
+@media all {
+    body{
+        background-color:rgb(216, 189, 189);
+        background-image: url("photos/Untitled.png");
+        background-blend-mode:soft-light;
+    font-size:large;
+    min-height: 1000px;
+    }
+  .amount{
+        text-align: right;
+    }
+ h3#invoice{
+text-align:center;
+}
+    td#subtotal{
+    border-top: black;
+    border-style:solid;
+    border-top-width: 1px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;    
+    }
+    td#total{
+        border-top: black;
+        border-style:double;
+        border-top: 0;
+        border-bottom-width: 3px;
+        border-left: 0;
+        border-right: 0;    
+        }
+    layer{
+        min-width: 50px;
+    }
+    form{
+        border:3px dotted black;
+        max-width: 450px;
+        padding:5px; 
+    }
+  
+    .rightalign{
+        float:right;
+        width:35%;
+        left:65%;
+       margin-right:10%;
+    }
+    .rightalign1{
+       
+       width:30%;
+       margin:0px;
+       padding:0px;
+     
+    }
+    .rightalign2{
+       
+        width:100%;
+        margin:0px;
+        margin-left:15%;
+      
+     }
+  div#order{
+      column-count: 3;
+  }
+    figure{
+        
+        padding:0;
+        margin:0;
+        text-align:center;
+    }
+    .bottom{
+        display:block;
+        float:right;
+        position:relative;
+        top:-8px;
+    }
+
+    .grid-container {
+        display: inline-flexbox;
+      
+        
+        margin:0px;
+      }
+    .grid-item1{
+        width:100%;
+        margin:0px;
+        padding:0px;
+    }
+  
+
+  img#logo{
+      width:50px;
+  }
+
+    .hidden {
+        display: none;
+    }
+    .touch-disabled {
+        display: block;
+    }
+   
+    footer{
+        position: absolute;
+        box-shadow: 2px 3px 2px rgba(247, 172, 88, 0.712), 1px 1px 1px darkslategrey;
+        bottom: 5%;
+        left:3%;
+        font-size: smaller;;
+        }
+}
+@media only screen and (min-device-width: 900px){
+    #orderdetail{
+        position:absolute;
+        top:10%;
+        left:55%;
+    }
+
+}
+
+@media print {
+    body {
+        background-color: none;
+        background-image: none;
+        font-family: sans-serif;
+    }
+    img{
+        display:none;
+    }
+  form{
+        display:none;
+    }
+
+}

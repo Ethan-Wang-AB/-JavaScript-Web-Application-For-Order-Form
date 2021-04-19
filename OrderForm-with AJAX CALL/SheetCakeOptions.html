@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="calCost.js"></script> 
+     <script type='text/javascript' src='StandardJSFunctions.js'></script>
+    <link href="orders.css" rel="stylesheet" type="text/css">
+
+    <title>New City Bakery</title>
+</head>
+
+<body>
+                   <label for="Margherita">Sheet Cake</label>
+            
+            <div>
+                <label for="layers:">Please Choose the number of layers </label>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item1">
+                    <input type="radio" id="layer1" name="layer" value="1"  checked>
+
+                    <label for="layer1">One Layer</label>
+                </div>
+
+                <div class="grid-item1">
+                    <input type="radio" id="layer2" name="layer" value="2" >
+
+                    <label for="layer2">Double Layers</label>
+                </div>
+
+                <div class="grid-item1">
+                    <input type="radio" id="layer3" name="layer" value="3" >
+
+                    <label for="layer3">Triple Layers</label>
+                </div>
+            </div>
+            
+
+            <div>
+                <label for="size">Please provide the size you wanted </label>
+            </div>
+            <div>
+                <label for="length">Length for Sheet Cake</label>
+                <input type="number" placeholder="30" id="length" max="60" min="30" name="length"
+                class="rightalign"   >
+            </div>
+            <div>
+                <div>
+                    <label for="width">Width for Sheet Cake</label>
+                    <input type="number" placeholder="30" id="width" max="45" min="30" name="width"
+                    class="rightalign" required onchange="calcsheet();getOptionAddOn();showInvoice();" >
+                </div>
+               
+      
+</body>
+
+</html>
